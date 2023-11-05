@@ -1,0 +1,1080 @@
+@charset "UTF-8";
+@import url("https://fonts.cdnfonts.com/css/neutral-face");
+@import url("https://fonts.cdnfonts.com/css/harmond-font-family");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@font-face {
+  font-family: "Pretendard-Thin";
+  font-weight: 100;
+  src: url(../fonts/Pretendard-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-ExtraLight";
+  font-weight: 200;
+  src: url(../fonts/Pretendard-ExtraLight.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Light";
+  font-weight: 300;
+  src: url(../fonts/Pretendard-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-weight: 400;
+  src: url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  font-weight: 500;
+  src: url(../fonts/Pretendard-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  font-weight: 600;
+  src: url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  font-weight: 700;
+  src: url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  font-weight: 800;
+  src: url(../fonts/Pretendard-ExtraBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Black";
+  font-weight: 900;
+  src: url(../fonts/Pretendard-Black.woff) format("woff");
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Thin";
+  font-weight: 100;
+  src: url(../fonts/Pretendard-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-ExtraLight";
+  font-weight: 200;
+  src: url(../fonts/Pretendard-ExtraLight.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Light";
+  font-weight: 300;
+  src: url(../fonts/Pretendard-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-weight: 400;
+  src: url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  font-weight: 500;
+  src: url(../fonts/Pretendard-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  font-weight: 600;
+  src: url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  font-weight: 700;
+  src: url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  font-weight: 800;
+  src: url(../fonts/Pretendard-ExtraBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Black";
+  font-weight: 900;
+  src: url(../fonts/Pretendard-Black.woff) format("woff");
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button, header, main, footer, article {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.5;
+  color: #111;
+}
+
+fieldset,
+img {
+  border: 0 none;
+}
+
+dl,
+ul,
+li,
+ol,
+menu,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 100%;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type=text], input[type=password], input[type=submit], input[type=search] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input:checked[type=checkbox] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+}
+
+button {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* 기본 폰트 설정 */
+/* mobile */
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Poppins", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #333;
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* color값은 디자인가이드에 맞게사용 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:active, a:hover {
+  text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+hr {
+  display: none;
+}
+
+input[type=password] {
+  font-family: "Malgun Gothic";
+}
+
+/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
+/* skipnavigation */
+#u-skip {
+  position: relative;
+  z-index: 3000;
+}
+#u-skip a {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  padding: 7px 10px 5px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+}
+#u-skip a:focus {
+  top: 0;
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* 이미지 스프라이트 */
+.img-g {
+  display: inline-block;
+  overflow: hidden;
+  background: url(../../images/comm/img-comm.png) no-repeat;
+  vertical-align: top;
+}
+
+/* 이미지 */
+/* global */
+.ir-pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir-wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind,
+caption,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tbl {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 테이블 초기화 */
+.clearfix {
+  display: block;
+  overflow: visible;
+  width: auto;
+  clear: both;
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  content: "";
+}
+
+.fullpage-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.section-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.section-intro {
+  background-color: #111;
+}
+
+.section-inner-intro {
+  flex-direction: column;
+}
+
+.header-nav_title {
+  font-family: "Mori Gothic";
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  animation: header-scale-up-top 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes header-scale-up-top {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 50% 0%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 0%;
+  }
+}
+
+.intro-title {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Mori Gothic";
+  font-weight: 800;
+  font-size: 140px;
+}
+
+.intro-title-top {
+  position: relative;
+  display: flex;
+}
+.intro-title-top span {
+  color: #fff;
+}
+
+.sunglass {
+  position: absolute;
+  top: 60px;
+  left: 232px;
+  width: 88px;
+  height: 88px;
+  background: url(../../dist/images/sunglasses-emoji.svg) 50% 50% no-repeat;
+  animation: sunglass-rotate-vert-center 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  background-size: contain;
+}
+@keyframes sunglass-rotate-vert-center {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.intro-title-growth {
+  margin-left: 86px;
+}
+
+.scale-star {
+  position: absolute;
+  top: -24px;
+  right: -48px;
+  width: 70px;
+  height: 70px;
+  background: url(../../dist/images/star-yellow.svg) 50% 50% no-repeat;
+  animation: gray-scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse;
+  background-size: contain;
+}
+@keyframes gray-scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.intro-title-btm {
+  display: flex;
+  color: #fff;
+  margin-left: -200px;
+  transform: translateY(-8px);
+}
+.intro-title-btm span {
+  color: #fff;
+}
+
+.section-profile {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.section-profile .fp-tableCell {
+  display: flex;
+}
+
+.profile-intro {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #488ED6;
+  border-right: 1px solid #111;
+}
+.profile-intro::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -30px;
+  width: 45px;
+  height: 140px;
+  background: url(../../dist/images/book-spiral.svg) 50% 50% no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
+.profile-intro::before {
+  content: "";
+  position: absolute;
+  bottom: 24px;
+  right: -30px;
+  width: 45px;
+  height: 140px;
+  background: url(../../dist/images/book-spiral.svg) 50% 50% no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
+
+.profile-intro-title {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+.profile-intro-title .profile-intro-smile {
+  width: 100px;
+  height: 100px;
+  background: url(../../dist/images/smile.svg) 50% 50% no-repeat;
+  animation: smile-rotate-vert-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  background-size: contain;
+}
+@keyframes smile-rotate-vert-center {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.profile-intro-title .profile-intro-txt {
+  font-family: "Mori Gothic";
+  font-size: 56px;
+  font-weight: 800;
+  color: #111;
+}
+
+.profile-intro-contents {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 8px;
+  font-family: "NanumSquare";
+  color: #111;
+  border-top: 1px solid #111;
+}
+.profile-intro-contents .profile-intro-cont_tit {
+  font-size: 30px;
+  font-weight: 600;
+}
+.profile-intro-contents .profile-intro-cont_lst {
+  font-size: 19px;
+  font-weight: 300;
+  text-align: end;
+  padding-top: 8px;
+}
+.profile-intro-contents .profile-intro-cont_lst li {
+  padding-top: 2px;
+}
+
+.profile-intro-cont_lst-g {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-intro-contents-star {
+  position: absolute;
+  top: -28px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background: url(../../dist/images/star.svg) 50% no-repeat;
+  background-size: contain;
+}
+
+.intro-cont_lst-skills {
+  display: flex;
+}
+
+.skill-icons {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+}
+
+.html {
+  background: url(../../dist/images/HTML.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.css {
+  background: url(../../dist/images/CSS.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.sass {
+  background: url(../../dist/images/Sass.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.js {
+  background: url(../../dist/images/JavaScript.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.jquery {
+  background: url(../../dist/images/JQuery.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.react {
+  background: url(../../dist/images/React-Dark.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.figma {
+  background: url(../../dist/images/Figma-Dark.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.photoshop {
+  background: url(../../dist/images/Photoshop.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.illustrator {
+  background: url(../../dist/images/illustrator.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.contact-github {
+  position: relative;
+  display: inline-block;
+}
+.contact-github .contact-github-tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+.contact-github .contact-github-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+.contact-github:hover .contact-github-tooltip {
+  visibility: visible;
+}
+
+.contact-github-tooltip-cont {
+  height: 40px;
+}
+
+.profile-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #D8D2C4;
+  overflow: hidden;
+}
+
+.profile-welcome-txt {
+  position: relative;
+  text-align: center;
+  font-family: "Mori Gothic";
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.section-tokenpost {
+  width: 100%;
+  height: 100vh;
+}
+.section-tokenpost .fp-tableCell {
+  display: flex;
+}
+
+.tokenpost-desc {
+  width: 27%;
+  height: 100%;
+  padding: 20px;
+  background-color: #655c53;
+  border-right: 1px solid #333;
+}
+.tokenpost-desc .tokenpost-num {
+  width: 80px;
+  height: 80px;
+  background: url(../../dist/images/1num-star.svg) 50% 50% no-repeat;
+  background-size: contain;
+  margin-left: -14px;
+}
+.tokenpost-desc .tokenpost-desc-tit {
+  padding-top: 20px;
+  font-family: "Mori Gothic";
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+}
+.tokenpost-desc .tokenpost-desc-sub {
+  font-family: "NanumSquare";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 16px;
+}
+.tokenpost-desc .tokenpost-desc-txt {
+  font-family: "NanumSquare";
+  font-size: 17px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #eee;
+}
+.tokenpost-desc .tokenpost-desc-cont {
+  font-family: "NanumSquare";
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 30px;
+}
+.tokenpost-desc .tokenpost-desc-cont li {
+  color: #eee;
+  padding-bottom: 4px;
+}
+.tokenpost-desc .tokenpost-desc-webbtn, .tokenpost-desc .tokenpost-desc-code {
+  border: 1px solid #eee;
+  padding: 6px;
+  font-family: "NanumSquare";
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.tokenpost-desc .tokenpost-desc-webbtn a, .tokenpost-desc .tokenpost-desc-code a {
+  color: #eee;
+}
+.tokenpost-desc .tokenpost-desc-experience {
+  font-family: "NanumSquare";
+  font-size: 15px;
+  font-weight: 300;
+  color: #eee;
+  padding-top: 50px;
+}
+
+.tokenpost-cont {
+  width: 73%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.tokenpost-cont-img-g {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.tokenpost-cont-img-g .tokenpost-cont-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background: url(../../dist/images/tokenpost-fullpage.png) 50% 0 no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  transition: background-position 8s ease;
+  cursor: pointer;
+}
+.tokenpost-cont-img-g .tokenpost-cont-img:hover {
+  overflow-y: scroll;
+}
+
+.tokenpost-cont-img-g:hover .tokenpost-cont-img {
+  background-position: 0 100%;
+}
+
+.tokenpost-cont-img-g .tokenpost-cont-img::-webkit-scrollbar {
+  display: none;
+}
+
+.section-mendini {
+  width: 100%;
+  height: 100vh;
+}
+.section-mendini .fp-tableCell {
+  display: flex;
+}
+
+.mendini-desc {
+  width: 27%;
+  height: 100%;
+  padding: 20px;
+  background-color: #4e4e4d;
+  border-right: 1px solid #333;
+}
+.mendini-desc .mendini-num {
+  width: 80px;
+  height: 80px;
+  background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
+  background-size: contain;
+  margin-left: -14px;
+  animation: num-rotate-vert-center 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+}
+.mendini-desc .mendini-desc-tit {
+  padding-top: 20px;
+  font-family: "Mori Gothic";
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+}
+.mendini-desc .mendini-desc-sub {
+  font-family: "NanumSquare";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 16px;
+}
+.mendini-desc .mendini-desc-txt {
+  font-family: "NanumSquare";
+  font-size: 17px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #eee;
+}
+.mendini-desc .mendini-desc-cont {
+  font-family: "NanumSquare";
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 30px;
+}
+.mendini-desc .mendini-desc-cont li {
+  color: #eee;
+  padding-bottom: 4px;
+}
+.mendini-desc .mendini-desc-webbtn, .mendini-desc .mendini-desc-code {
+  border: 1px solid #eee;
+  padding: 6px;
+  font-family: "NanumSquare";
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.mendini-desc .mendini-desc-webbtn a, .mendini-desc .mendini-desc-code a {
+  color: #eee;
+}
+.mendini-desc .mendini-desc-experience {
+  font-family: "NanumSquare";
+  font-size: 15px;
+  font-weight: 300;
+  color: #eee;
+  padding-top: 50px;
+}
+
+.mendini-cont {
+  display: flex;
+  width: 73%;
+  height: 100%;
+  align-items: center;
+  background-color: #f2f3f9;
+}
+
+.mendini-cont-img-g {
+  position: relative;
+  width: 100%;
+  height: 73%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.mendini-cont-img-g .mendini-cont-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background: url(../../dist/images/mendini-onepage.svg) 50% 0 no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  transition: background-position 5s ease;
+  cursor: pointer;
+}
+.mendini-cont-img-g .mendini-cont-img:hover {
+  overflow-y: scroll;
+}
+
+.mendini-cont-img-g:hover .mendini-cont-img {
+  background-position: 0 100%;
+}
+
+.mendini-cont-img-g .mendini-cont-img::-webkit-scrollbar {
+  display: none;
+}
+
+.section-verve {
+  width: 100%;
+  height: 100vh;
+}
+.section-verve .fp-tableCell {
+  display: flex;
+}
+
+.verve-desc {
+  width: 27%;
+  height: 100%;
+  padding: 20px;
+  background-color: #4e4e4d;
+  border-right: 1px solid #333;
+}
+.verve-desc .verve-num {
+  width: 80px;
+  height: 80px;
+  background: url(../../dist/images/3num-star.svg) 50% 50% no-repeat;
+  background-size: contain;
+  margin-left: -14px;
+  animation: num-rotate-vert-center 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+}
+.verve-desc .verve-desc-tit {
+  padding-top: 20px;
+  font-family: "Mori Gothic";
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+}
+.verve-desc .verve-desc-sub {
+  font-family: "NanumSquare";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 16px;
+}
+.verve-desc .verve-desc-txt {
+  font-family: "NanumSquare";
+  font-size: 17px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #eee;
+}
+.verve-desc .verve-desc-cont {
+  font-family: "NanumSquare";
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 30px;
+}
+.verve-desc .verve-desc-cont li {
+  color: #eee;
+  padding-bottom: 4px;
+}
+.verve-desc .verve-desc-webbtn, .verve-desc .verve-desc-code {
+  border: 1px solid #eee;
+  padding: 6px;
+  font-family: "NanumSquare";
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.verve-desc .verve-desc-webbtn a, .verve-desc .verve-desc-code a {
+  color: #eee;
+}
+.verve-desc .verve-desc-experience {
+  font-family: "NanumSquare";
+  font-size: 15px;
+  font-weight: 300;
+  color: #eee;
+  padding-top: 50px;
+}
+
+.mendini-cont {
+  display: flex;
+  width: 73%;
+  height: 100%;
+  align-items: center;
+  background-color: #f2f3f9;
+}
+
+.mendini-cont-img-g {
+  position: relative;
+  width: 100%;
+  height: 73%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.mendini-cont-img-g .mendini-cont-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background: url(../../dist/images/mendini-onepage.svg) 50% 0 no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  transition: background-position 5s ease;
+  cursor: pointer;
+}
+.mendini-cont-img-g .mendini-cont-img:hover {
+  overflow-y: scroll;
+}
+
+.mendini-cont-img-g:hover .mendini-cont-img {
+  background-position: 0 100%;
+}
+
+.mendini-cont-img-g .mendini-cont-img::-webkit-scrollbar {
+  display: none;
+}
+
+.section-contact {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.section-contact .contact-camera {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section-contact .contact-camera .spline-viewer {
+  width: 50%;
+  height: 50%;
+  background-size: contain;
+}
+.section-contact .contact-contact {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}/*# sourceMappingURL=comm.css.map */
