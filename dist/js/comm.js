@@ -87,10 +87,21 @@ gsap.fromTo(".profile-intro-contents-star", {
 });
 
 // Section 3 : left descirption / tokenpost-num
-gsap.to(".tokenpost-num, .mendini-num", {
+gsap.to(".tokenpost-num, .mendini-num, .verve-num", {
   rotation: 360,
   duration: 2,
   repeat: -1,
   repeatDelay: 3,
   ease: 'none'
+});
+
+
+gsap.fromTo(".shakingeyes", {
+  x: 350,
+  rotation: 0,
+}, {
+  x: 400,
+  duration: 1,
+  yoyo: true,
+  repeat: -1, 
 });
