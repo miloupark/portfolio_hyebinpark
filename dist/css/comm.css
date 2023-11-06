@@ -444,15 +444,10 @@ legend {
   color: #fff;
 }
 
-.sunglass {
-  position: absolute;
-  top: 60px;
-  left: 232px;
+.sunglass-img {
   width: 88px;
   height: 88px;
-  background: url(../../dist/images/sunglasses-emoji.svg) 50% 50% no-repeat;
   animation: sunglass-rotate-vert-center 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
-  background-size: contain;
 }
 @keyframes sunglass-rotate-vert-center {
   0% {
@@ -461,10 +456,6 @@ legend {
   100% {
     transform: rotateY(360deg);
   }
-}
-
-.intro-title-growth {
-  margin-left: 86px;
 }
 
 .scale-star {
@@ -700,9 +691,6 @@ legend {
 }
 
 .profile-welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
   height: 100vh;
   padding: 20px;
@@ -718,6 +706,7 @@ legend {
   font-family: "Mori Gothic";
   font-size: 72px;
   font-weight: 800;
+  padding-top: 100px;
 }
 
 .section-tokenpost {
@@ -791,6 +780,7 @@ legend {
   font-family: "NanumSquare";
   font-size: 15px;
   font-weight: 300;
+  line-height: 1.7;
   color: #eee;
   padding-top: 50px;
 }
@@ -903,6 +893,7 @@ legend {
   font-family: "NanumSquare";
   font-size: 15px;
   font-weight: 300;
+  line-height: 1.7;
   color: #eee;
   padding-top: 50px;
 }
@@ -979,14 +970,14 @@ legend {
 .verve-desc .verve-desc-sub {
   font-family: "NanumSquare";
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   color: #111;
   padding-top: 16px;
 }
 .verve-desc .verve-desc-txt {
   font-family: "NanumSquare";
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 10px;
   padding-bottom: 20px;
   color: #111;
@@ -994,7 +985,7 @@ legend {
 .verve-desc .verve-desc-cont {
   font-family: "NanumSquare";
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 30px;
 }
 .verve-desc .verve-desc-cont li {
@@ -1006,7 +997,7 @@ legend {
   padding: 6px;
   font-family: "NanumSquare";
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 20px;
 }
 .verve-desc .verve-desc-webbtn a, .verve-desc .verve-desc-code a {
@@ -1015,9 +1006,10 @@ legend {
 .verve-desc .verve-desc-experience {
   font-family: "NanumSquare";
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   color: #111;
   padding-top: 50px;
+  line-height: 1.7;
 }
 
 .verve-cont {
@@ -1038,11 +1030,12 @@ legend {
   cursor: pointer;
 }
 .verve-cont-img-detail-g .verve-cont-img-detail {
+  position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
   overflow-y: auto;
-  background: url(../../dist/images/verve상세페이지.svg) 50% 0 no-repeat;
+  background: url(../../dist/images/verve상세페이지.svg) 50% 0 no-repeat;
   background-position: 0 0;
   background-size: 100% auto;
   transition: background-position 30s ease;
@@ -1072,7 +1065,7 @@ legend {
   height: 100%;
   overflow: hidden;
   overflow-y: auto;
-  background: url(../../dist/images/verve-결제창.svg) 50% 0 no-repeat;
+  background: url(../../dist/images/verve-결제창.svg) 50% 0 no-repeat;
   background-position: 0 0;
   background-size: 100% auto;
   transition: background-position 5s ease;
@@ -1102,7 +1095,7 @@ legend {
   height: 100%;
   overflow: hidden;
   overflow-y: auto;
-  background: url(../../dist/images/verve장바구니.svg) 50% 0 no-repeat;
+  background: url(../../dist/images/verve장바구니.svg) 50% 0 no-repeat;
   background-position: 0 0;
   background-size: 100% auto;
   transition: background-position 5s ease;
