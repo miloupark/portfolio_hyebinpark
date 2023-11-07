@@ -768,10 +768,10 @@ legend {
   color: #eee;
 }
 .sec-left .sec-left-arrows-g {
-  position: fixed;
+  position: relative;
   display: flex;
-  width: 25%;
-  padding-top: 9%;
+  width: 100%;
+  padding-top: 40%;
   justify-content: flex-end;
 }
 .sec-left .sec-left-arrows-g::after {
