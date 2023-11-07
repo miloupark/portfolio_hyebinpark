@@ -444,6 +444,11 @@
     background-size: contain;
   }
 }
+@media only screen and (max-width: 1600px) {
+  iframe {
+    transform: scale(0.9);
+  }
+}
 
 // Section 4
 // Section 4 : left descirption

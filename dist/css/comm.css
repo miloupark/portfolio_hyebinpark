@@ -832,6 +832,11 @@ legend {
   background-size: contain;
 }
 
+@media only screen and (max-width: 1600px) {
+  iframe {
+    transform: scale(0.9);
+  }
+}
 .mendini-desc {
   background-color: #4e4e4d;
 }
