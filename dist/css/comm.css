@@ -392,6 +392,7 @@ legend {
 }
 .section .fp-tableCell {
   display: flex;
+  width: 100%;
 }
 
 .section-inner {
@@ -700,6 +701,7 @@ legend {
 .profile-welcome-txt {
   position: relative;
   width: 100%;
+  height: 100vh;
   text-align: center;
   font-family: "Mori Gothic";
   font-size: 72px;
