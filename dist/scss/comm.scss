@@ -308,12 +308,8 @@
 }
 .profile-welcome-txt {
   position: relative;
-  // display: flex;
   width: 100%;
-  height: 100%;
   text-align: center;
-  // flex-direction: column;
-  // justify-content: center;
   font-family: $mori;
   font-size: 72px;
   font-weight: 800;
@@ -321,6 +317,7 @@
 }
 
 // Section Comm : Section 3 ~ Section 5
+// Section Comm : left descirption
 .sec-left {
   width: 27%;
   height: 100%;
@@ -336,18 +333,22 @@
     font-size: 40px;
     font-weight: 800;
     padding: 20px 0 10px;
+    color: #fff;
+    border-bottom: 1px solid rgba(238, 238, 238, .5);
   }
   .sec-left-sub {
     font-family: $nanum;
     font-size: 20px;
     font-weight: 400;
     padding-top: 16px;
+    color: #fff;
   }
   .sec-left-txt {
     font-family: $nanum;
     font-size: 17px;
     font-weight: 300;
     padding: 10px 0 20px;
+    color: #eee;
   }
   .sec-left-cont {
     font-family: $nanum;
@@ -356,6 +357,7 @@
     padding-top: 30px;
     li {
       padding-bottom: 4px;
+      color: #eee;
     }
   }
   .sec-left-btn {
@@ -364,6 +366,10 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 20px;
+    border: 1px solid #eee;
+    a {
+      color: #eee;
+    }
   }
   .sec-left-experience {
     font-family: $nanum;
@@ -372,6 +378,7 @@
     line-height: 1.7;
     padding-top: 50px;
     line-height: 1.7;
+    color: #eee;
   }
   .sec-left-arrows-g {
     position: relative;
@@ -387,6 +394,8 @@
       left: 192px;
       width: 30px;
       height: 30px;
+      background: url(../../dist/images/star-yellow.svg) 50% 50% no-repeat;
+      background-size: contain;
       animation: gray-scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse ;
       @keyframes gray-scale-up-center {
         0% {
@@ -402,6 +411,7 @@
       font-family: $nanum;
       font-size: 16px;
       font-weight: 500;
+      color: #eee;
     }
     .sec-left-arrows {
       width: 50px;
@@ -419,7 +429,11 @@
     }
   }
 }
-
+// Section Comm : right contents
+.sec-right {
+  width: 73%;
+  height: 100vh;
+}
 
 // Section 3 
 // Section 3 : left descirption
@@ -429,45 +443,6 @@
     background: url(../../dist/images/1num-star.svg) 50% 50% no-repeat;
     background-size: contain;
   }
-  .tokenpost-desc-tit {
-    color: #fff;
-    border-bottom: 1px solid rgba(238, 238, 238, .5);
-  }
-  .tokenpost-desc-sub {
-    color: #fff;
-  }
-  .tokenpost-desc-txt {
-    color: #eee;
-  }
-  .tokenpost-desc-cont {   
-    li {
-      color: #eee;
-    }
-  }
-  .tokenpost-desc-webbtn, .tokenpost-desc-code, .tokenpost-desc-figma {
-    border: 1px solid #eee;
-    a {
-      color: #eee;
-    }
-  }
-  .tokenpost-desc-experience {
-    color: #eee;
-  }
-  .tokenpost-desc-scrollarrow-g {
-    &::after {
-      background: url(../../dist/images/star-yellow.svg) 50% 50% no-repeat;
-      background-size: contain;
-    }
-  }
-  .tokenpost-desc-scrollarrow-txt {
-    color: #eee;
-  }
-}
-// Section 3 : right contents
-.tokenpost-cont { 
-  width: 73%;
-  height: 100vh;
-  background-color: #fff;
 }
 
 // Section 4
@@ -478,260 +453,104 @@
     background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
     background-size: contain;
   }
-  .mendini-desc-tit {
-    color: #fff;
-    border-bottom: 1px solid rgba(238, 238, 238, .5);
-  }
-  .mendini-desc-sub {
-    color: #fff;
-  }
-  .mendini-desc-txt {
-    color: #eee;
-  }
-  .mendini-desc-cont {   
-    li {
-      color: #eee;
-    }
-  }
-  .mendini-desc-webbtn, .mendini-desc-code, .mendini-desc-figma {
-    border: 1px solid #eee;
-    a {
-      color: #eee;
-    }
-  }
-  .mendini-desc-experience {
-
-    color: #eee;
-  }
-  .mendini-desc-scrollarrow-g {
-    &::after {
-      background: url(../../dist/images/star-yellow.svg) 50% 50% no-repeat;
-      background-size: contain;
-    }
-  }
-  .mendini-desc-scrollarrow-txt {
-    color: #eee;
-  }
-}
-
-// Section 4 : right contents
-.mendini-cont { 
-  display: flex;
-  width: 73%;
-  height: 100%;
-  align-items: center;
-  // padding: 84px 20px 20px 30px;
-  background-color: #f2f3f9;
-}
-.mendini-cont-img-g {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  cursor: pointer;
-  .mendini-cont-img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    overflow-y: auto; 
-    // background: url(../../dist/images/mendini-onepage.svg) 50% 0 no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto; 
-    transition: background-position 5s ease;
-    cursor: pointer;
-    &:hover {
-      overflow-y: scroll; 
-    }
-  } 
-}
-.mendini-cont-img-g:hover {
-  .mendini-cont-img {
-    background-position: 0 100%;
-  } 
-}
-.mendini-cont-img-g 
-.mendini-cont-img::-webkit-scrollbar {
-  display: none;
 }
 
 // Section 5
-.section-verve {
-  width: 100%;
-  height: 100vh;
-  .fp-tableCell {
-    display: flex;
-  }
-}
 // Section 5 : left descirption
 .verve-desc {
-  width: 27%;
-  height: 100%;
-  padding: 20px;
-  background-color: #eee;
   border-right: 1px solid #333;
-  .verve-num {
-    width: 80px;
-    height: 80px;
+  .sec-left-icon {
     background: url(../../dist/images/3num-star.svg) 50% 50% no-repeat;
     background-size: contain;
-    margin-left: -14px;
   }
-  .verve-desc-tit {
-    padding-top: 20px;
-    font-family: $mori;
-    font-size: 40px;
-    font-weight: 800;
+  .sec-left-tit {
     color: #111;
-    padding-bottom: 10px;
     border-bottom: 1px solid #333;
   }
-  .verve-desc-sub {
-    font-family: $nanum;
-    font-size: 20px;
+  .sec-left-sub {
     font-weight: 600;
     color: #111;
-    padding-top: 16px;
   }
   .verve-desc-txt {
-    font-family: $nanum;
-    font-size: 17px;
     font-weight: 400;
-    padding-top: 10px;
-    padding-bottom: 20px;
     color: #111;
   }
   .verve-desc-cont {   
-    font-family: $nanum;
-    font-size: 16px;
     font-weight: 400;
     padding-top: 30px;
     li {
       color: #111;
-      padding-bottom: 4px;
     }
   }
   .verve-desc-webbtn, .verve-desc-code, .verve-desc-figma {
     border: 1px solid #111;
-    padding: 6px;
-    font-family: $nanum;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 20px;
     a {
       color: #111;
     }
   }
   .verve-desc-experience {
-    font-family: $nanum;
-    font-size: 15px;
     font-weight: 400;
     color: #111;
-    padding-top: 50px;
-    line-height: 1.7;
+  }
+  .mendini-desc-scrollarrow-g {
+    .mendini-desc-scrollarrow-txt {
+      font-weight: 600;
+      color: #111;
+    }
   }
 }
 // Section 4 : right contents
 .verve-cont { 
   display: flex;
-  width: 73%;
-  height: 100%;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
   background-color: #111;
 }
-// 상세페이지
-.verve-cont-img-detail-g {
+.sec-right-img-g {
   position: relative;
   width: 30%;
   height: 73%;
   overflow: hidden;
   cursor: pointer;
-  .verve-cont-img-detail {
+  .sec-right-img {
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
     overflow-y: auto; 
-    background: url(../../dist/images/verve상세페이지.svg) 50% 0 no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto; 
     transition: background-position 30s ease;
     cursor: pointer;
     &:hover {
       overflow-y: scroll; 
     }
-  } 
-}
-.verve-cont-img-detail-g:hover {
+  }
   .verve-cont-img-detail {
-    background-position: 0 100%;
+    background: url(../../dist/images/verve상세페이지.svg) 50% 0 no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto; 
   } 
-}
-.verve-cont-img-detail-g 
-.verve-cont-img-detail::-webkit-scrollbar {
-  display: none;
-}
-// 구매페이지
-.verve-cont-img-purchase-g {
-  position: relative;
-  width: 30%;
-  height: 73%;
-  overflow: hidden;
-  cursor: pointer;
   .verve-cont-img-purchase {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    overflow-y: auto; 
     background: url(../../dist/images/verve-결제창.svg) 50% 0 no-repeat;
     background-position: 0 0;
     background-size: 100% auto; 
-    transition: background-position 5s ease;
-    cursor: pointer;
-    &:hover {
-      overflow-y: scroll; 
-    }
+    transition: background-position 4s ease;
   } 
-}
-.verve-cont-img-purchase-g:hover {
-  .verve-cont-img-purchase {
-    background-position: 0 100%;
-  } 
-}
-.verve-cont-img-purchase-g 
-.verve-cont-img-purchase::-webkit-scrollbar {
-  display: none;
-}
-// 장바구니
-.verve-cont-img-cart-g {
-  position: relative;
-  width: 30%;
-  height: 73%;
-  overflow: hidden;
-  cursor: pointer;
   .verve-cont-img-cart {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    overflow-y: auto; 
     background: url(../../dist/images/verve장바구니.svg) 50% 0 no-repeat;
     background-position: 0 0;
     background-size: 100% auto; 
-    transition: background-position 5s ease;
-    cursor: pointer;
-    &:hover {
-      overflow-y: scroll; 
-    }
+    transition: background-position 1.5s ease;
   } 
 }
-.verve-cont-img-cart-g:hover {
-  .verve-cont-img-cart {
+
+.sec-right-img-g:hover {
+  .sec-right-img {
     background-position: 0 100%;
   } 
 }
-.verve-cont-img-cart-g 
-.verve-cont-img-cart::-webkit-scrollbar {
+.sec-right-img-g 
+.sec-right-img::-webkit-scrollbar {
   display: none;
 }
 
