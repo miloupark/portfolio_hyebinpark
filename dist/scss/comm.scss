@@ -386,7 +386,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 40%;
     justify-content: flex-end;
     &::after {
       position: absolute;
@@ -407,6 +407,11 @@
         }
       }
     }
+    @media only screen and (max-width: 1600px) {
+      .sec-left-arrows-g {
+        padding-top: 16%;
+      }
+    }    
     .sec-left-arrows-txt {
       text-align: end;
       font-family: $nanum;
