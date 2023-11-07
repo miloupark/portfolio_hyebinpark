@@ -96,10 +96,10 @@ gsap.fromTo(".profile-intro-contents-star", {
 // });
 
 gsap.fromTo(".shakingeyes", {
-  x: 350,
+  x: 230,
   rotation: 0,
 }, {
-  x: 400,
+  x: 300,
   duration: 1,
   yoyo: true,
   repeat: -1, 
@@ -115,3 +115,5 @@ gsap.to(".sec-left-arrows-txt", {
 });
 
 
+
+Sticker.init('.sticker');
