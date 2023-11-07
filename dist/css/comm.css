@@ -715,11 +715,6 @@ legend {
   padding: 20px;
   border-right: 1px solid #333;
 }
-.sec-left .sec-left-icon {
-  width: 80px;
-  height: 80px;
-  margin-left: -14px;
-}
 .sec-left .sec-left-tit {
   font-family: "Mori Gothic";
   font-size: 40px;
@@ -776,14 +771,13 @@ legend {
   position: relative;
   display: flex;
   width: 100%;
-  height: 100%;
-  padding-top: 88px;
+  padding-top: 40%;
   justify-content: flex-end;
 }
 .sec-left .sec-left-arrows-g::after {
   position: absolute;
   content: "";
-  top: 66px;
+  top: 156px;
   left: 192px;
   width: 30px;
   height: 30px;
