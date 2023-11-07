@@ -715,6 +715,16 @@ legend {
   padding: 20px;
   border-right: 1px solid #333;
 }
+.sec-left .sec-left-icon {
+  width: 80px;
+  height: 80px;
+  margin-left: -14px;
+}
+@media only screen and (max-width: 1600px) {
+  .sec-left .sec-left-icon {
+    display: none;
+  }
+}
 .sec-left .sec-left-tit {
   font-family: "Mori Gothic";
   font-size: 40px;
@@ -771,13 +781,13 @@ legend {
   position: relative;
   display: flex;
   width: 100%;
-  padding-top: 40%;
+  padding-top: 26%;
   justify-content: flex-end;
 }
 .sec-left .sec-left-arrows-g::after {
   position: absolute;
   content: "";
-  top: 156px;
+  top: 104px;
   left: 192px;
   width: 30px;
   height: 30px;
@@ -796,6 +806,10 @@ legend {
 @media only screen and (max-width: 1600px) {
   .sec-left .sec-left-arrows-g .sec-left-arrows-g {
     padding-top: 16%;
+  }
+  .sec-left .sec-left-arrows-g .sec-left-arrows-g::after {
+    top: 156px;
+    left: 80px;
   }
 }
 .sec-left .sec-left-arrows-g .sec-left-arrows-txt {
