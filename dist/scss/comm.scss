@@ -383,10 +383,10 @@
     color: #eee;
   }
   .sec-left-arrows-g {
-    position: relative;
+    position: fixed;
     display: flex;
-    width: 100%;
-    padding-top: 40%;
+    width: 25%;
+    padding-top: 9%;
     justify-content: flex-end;
     &::after {
       position: absolute;
