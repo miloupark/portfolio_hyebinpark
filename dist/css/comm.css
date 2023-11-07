@@ -771,7 +771,7 @@ legend {
   position: relative;
   display: flex;
   width: 100%;
-  padding-top: 40%;
+  padding-top: 40px;
   justify-content: flex-end;
 }
 .sec-left .sec-left-arrows-g::after {
