@@ -96,10 +96,10 @@ gsap.fromTo(".profile-intro-contents-star", {
 // });
 
 gsap.fromTo(".shakingeyes", {
-  x: 230,
+  x: 30,
   rotation: 0,
 }, {
-  x: 300,
+  x: 80,
   duration: 1,
   yoyo: true,
   repeat: -1, 

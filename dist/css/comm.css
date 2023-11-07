@@ -715,17 +715,19 @@ legend {
   padding: 20px;
   border-right: 1px solid #333;
 }
-.sec-left .sec-left-icon {
+
+.sec-left-icon {
   width: 80px;
   height: 80px;
   margin-left: -14px;
 }
+
 @media only screen and (max-width: 1600px) {
-  .sec-left .sec-left-icon {
+  .sec-left-icon {
     display: none;
   }
 }
-.sec-left .sec-left-tit {
+.sec-left-tit {
   font-family: "Mori Gothic";
   font-size: 40px;
   font-weight: 800;
@@ -733,31 +735,35 @@ legend {
   color: #fff;
   border-bottom: 1px solid rgba(238, 238, 238, 0.5);
 }
-.sec-left .sec-left-sub {
+
+.sec-left-sub {
   font-family: "NanumSquare";
   font-size: 20px;
   font-weight: 400;
   padding-top: 16px;
   color: #fff;
 }
-.sec-left .sec-left-txt {
+
+.sec-left-txt {
   font-family: "NanumSquare";
   font-size: 17px;
   font-weight: 300;
   padding: 10px 0 20px;
   color: #eee;
 }
-.sec-left .sec-left-cont {
+
+.sec-left-cont {
   font-family: "NanumSquare";
   font-size: 16px;
   font-weight: 300;
   padding-top: 30px;
 }
-.sec-left .sec-left-cont li {
+.sec-left-cont li {
   padding-bottom: 4px;
   color: #eee;
 }
-.sec-left .sec-left-btn {
+
+.sec-left-btn {
   padding: 6px;
   font-family: "NanumSquare";
   font-size: 16px;
@@ -765,10 +771,11 @@ legend {
   margin-top: 20px;
   border: 1px solid #eee;
 }
-.sec-left .sec-left-btn a {
+.sec-left-btn a {
   color: #eee;
 }
-.sec-left .sec-left-experience {
+
+.sec-left-experience {
   font-family: "NanumSquare";
   font-size: 15px;
   font-weight: 300;
@@ -777,7 +784,8 @@ legend {
   line-height: 1.7;
   color: #eee;
 }
-.sec-left .sec-left-arrows-g {
+
+.sec-left-arrows-g {
   position: relative;
   display: flex;
   width: 100%;
@@ -785,7 +793,7 @@ legend {
   justify-content: flex-end;
   padding-top: 26%;
 }
-.sec-left .sec-left-arrows-g::after {
+.sec-left-arrows-g::after {
   position: absolute;
   content: "";
   top: 104px;
@@ -804,23 +812,32 @@ legend {
     transform: scale(1);
   }
 }
+
 @media only screen and (max-width: 1600px) {
-  .sec-left .sec-left-arrows-g .sec-left-arrows-g {
+  .sec-left-arrows-g {
     padding-top: 16%;
   }
-  .sec-left .sec-left-arrows-g .sec-left-arrows-g::after {
-    top: 156px;
-    left: 80px;
+  .sec-left-arrows-g::after {
+    top: 38px;
+    left: 118px;
+  }
+  .mendini-desc-scrollarrow-g {
+    padding-top: 24%;
+  }
+  .mendini-desc-scrollarrow-g::after {
+    top: 64px;
+    left: 118px;
   }
 }
-.sec-left .sec-left-arrows-g .sec-left-arrows-txt {
+.sec-left-arrows-txt {
   text-align: end;
   font-family: "NanumSquare";
   font-size: 16px;
   font-weight: 500;
   color: #eee;
 }
-.sec-left .sec-left-arrows-g .sec-left-arrows {
+
+.sec-left-arrows {
   width: 50px;
   height: 50px;
   animation: arrow-rotate-vert-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
@@ -893,9 +910,13 @@ legend {
   font-weight: 400;
   color: #111;
 }
-.verve-desc .mendini-desc-scrollarrow-g .mendini-desc-scrollarrow-txt {
-  font-weight: 600;
+.verve-desc .verve-desc-scrollarrow-g {
   color: #111;
+}
+.verve-desc .verve-desc-scrollarrow-g .verve-desc-scrollarrow-txt {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
 }
 
 .verve-cont {
@@ -957,8 +978,11 @@ legend {
 
 .sec-contact-left {
   position: relative;
+  display: flex;
   width: 50%;
   height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
   border-right: 2px solid #111;
 }
@@ -987,7 +1011,6 @@ legend {
 
 .section-contact-tit {
   display: flex;
-  gap: 16px;
 }
 .section-contact-tit .section-contact-tittxt {
   font-family: "Mori Gothic";
@@ -996,58 +1019,48 @@ legend {
   color: #111;
 }
 .section-contact-tit .shakingeyes {
-  position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: url(../../dist/images/eyes.png) 50% 50% no-repeat;
   background-size: contain;
 }
 
-.section-contact-lst {
-  display: flex;
-  width: 100%;
-  gap: 100px;
-  justify-content: center;
-  align-items: center;
-  margin: 200px 0;
-}
-.section-contact-lst .section-contact-item {
+.sec-contact-cont {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  font-family: "NanumSquare";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-top: 220px;
 }
-.section-contact-lst .section-contact-item .contact-icon {
-  width: 120px;
-  height: 120px;
+.sec-contact-cont li {
+  padding-top: 2px;
 }
-.section-contact-lst .section-contact-item .contact-index {
-  width: 150px;
-  height: 50px;
-  padding-top: 16px;
+.sec-contact-cont li span {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 16px;
 }
-.section-contact-lst .contact-email-icon {
-  background: url(../../dist/images/email-icon2.png) 50% 50% no-repeat;
-  background-size: contain;
+.sec-contact-cont li a {
+  color: #111;
 }
-.section-contact-lst .contact-email-index {
-  background: url(../../dist/images/index1.svg) 50% 50% no-repeat;
-  background-size: contain;
+.sec-contact-cont li a span:nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
 }
-.section-contact-lst .contact-phone-icon {
-  background: url(../../dist/images/mobileicon.png) 50% 50% no-repeat;
-  background-size: contain;
+.sec-contact-cont li:nth-child(2) {
+  margin-top: 40px;
 }
-.section-contact-lst .contact-phone-index {
-  background: url(../../dist/images/index2.svg) 50% 50% no-repeat;
-  background-size: contain;
+.sec-contact-cont li:nth-child(3), .sec-contact-cont li:nth-child(7) {
+  margin-top: 20px;
 }
-.section-contact-lst .contact-github-icon {
-  background: url(../../dist/images/githublinkicon.png) 50% 50% no-repeat;
-  background-size: contain;
-}
-.section-contact-lst .contact-github-index {
-  background: url(../../dist/images/index3.svg) 50% 50% no-repeat;
-  background-size: contain;
+
+.sec-contact-left .sec-contact-about {
+  font-family: "NanumSquare";
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .sec-contact-right {
@@ -1060,27 +1073,23 @@ legend {
   padding: 20px;
 }
 
-.contact-memo {
-  width: 400px;
-  height: 400px;
-  background: url(../../dist/images/memo.svg) 50% 50% no-repeat;
-  background-size: contain;
-  font-family: "NanumSquare";
-  font-size: 16px;
-  font-weight: 600;
-  padding: 40px;
+.contact-closing-txt {
+  font-family: "Mori Gothic";
+  font-size: 24px;
+  font-weight: 500;
+  margin: auto;
 }
 
 .sec-contact-left-bottom {
   display: flex;
-  gap: 8px;
+  gap: 20px;
 }
 
 .copyright {
   font-family: "NanumSquare";
   font-size: 16px;
   font-weight: 600;
-  padding-top: 75px;
+  padding-top: 80px;
 }
 
 .githubqr {
