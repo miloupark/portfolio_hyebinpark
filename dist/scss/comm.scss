@@ -461,7 +461,6 @@
     padding: 16px;
   }
 }
-
 // Section 2 : right / welcome text
 .profile-welcome {
   width: 50%;
@@ -518,6 +517,9 @@
   margin-left: -14px;
 }
 @media only screen and (max-width: 1600px) {
+  .sec-left {
+    width: 17%;
+  }
   .sec-left-icon {
     display: none;
   }
@@ -601,22 +603,22 @@
     }
   }
 }
-  @media only screen and (max-width: 1600px) {
-      .sec-left-arrows-g {
-        padding-top: 16%;
-        &::after {
-          top: 38px;
-          left: 118px;
-        }
-      }
-      .mendini-desc-scrollarrow-g {
-        padding-top: 24%;
-        &::after {
-          top: 64px;
-          left: 118px;
-        }
+@media only screen and (max-width: 1600px) {
+    .sec-left-arrows-g {
+      padding-top: 16%;
+      &::after {
+        top: 38px;
+        left: 118px;
       }
     }
+    .mendini-desc-scrollarrow-g {
+      padding-top: 24%;
+      &::after {
+        top: 64px;
+        left: 118px;
+      }
+    }
+  }
 .sec-left-arrows-txt {
   text-align: end;
   font-family: $nanum;
@@ -643,6 +645,11 @@
   position: relative;
   width: 73%;
   height: 100vh;
+}
+@media only screen and (max-width: 1600px) {
+  .sec-right {
+    width: 83%;
+  }
 }
 
 // Section 3 
@@ -855,7 +862,7 @@
   .sec-contact-about {
     font-family: $nanum;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 

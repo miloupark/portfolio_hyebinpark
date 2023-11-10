@@ -902,6 +902,9 @@ legend {
 }
 
 @media only screen and (max-width: 1600px) {
+  .sec-left {
+    width: 17%;
+  }
   .sec-left-icon {
     display: none;
   }
@@ -1037,6 +1040,11 @@ legend {
   height: 100vh;
 }
 
+@media only screen and (max-width: 1600px) {
+  .sec-right {
+    width: 83%;
+  }
+}
 .tokenpost-desc {
   background-color: #655c53;
 }
@@ -1239,7 +1247,7 @@ legend {
 .sec-contact-left .sec-contact-about {
   font-family: "NanumSquare";
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .sec-contact-right {
