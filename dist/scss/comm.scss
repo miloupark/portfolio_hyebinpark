@@ -515,15 +515,7 @@
   width: 80px;
   height: 80px;
   margin-left: -14px;
-}
-@media only screen and (max-width: 1600px) {
-  .sec-left {
-    width: 17%;
-  }
-  .sec-left-icon {
-    display: none;
-  }
-}    
+}   
 .sec-left-tit {
   font-family: $mori;
   font-size: 40px;
@@ -543,14 +535,14 @@
   font-family: $nanum;
   font-size: 17px;
   font-weight: 300;
-  padding: 10px 0 20px;
+  padding-top: 10px;
   color: #eee;
 }
 .sec-left-cont {
   font-family: $nanum;
   font-size: 16px;
   font-weight: 300;
-  padding-top: 30px;
+  padding: 30px 0;
   li {
     padding-bottom: 4px;
     color: #eee;
@@ -561,8 +553,8 @@
   font-family: $nanum;
   font-size: 16px;
   font-weight: 500;
-  margin-top: 20px;
   border: 1px solid #eee;
+  margin-right: 10px;
   a {
     color: #eee;
   }
@@ -582,11 +574,11 @@
   width: 100%;
   gap: 16px;
   justify-content: flex-end;
-  padding-top: 26%;
+  padding-top: 20%;
   &::after {
     position: absolute;
     content: '';
-    top: 104px;
+    top: 68px;
     left: 220px;
     width: 30px;
     height: 30px;
@@ -603,22 +595,6 @@
     }
   }
 }
-@media only screen and (max-width: 1600px) {
-    .sec-left-arrows-g {
-      padding-top: 16%;
-      &::after {
-        top: 38px;
-        left: 118px;
-      }
-    }
-    .mendini-desc-scrollarrow-g {
-      padding-top: 24%;
-      &::after {
-        top: 64px;
-        left: 118px;
-      }
-    }
-  }
 .sec-left-arrows-txt {
   text-align: end;
   font-family: $nanum;
@@ -629,8 +605,8 @@
 .sec-left-arrows {
   width: 50px;
   height: 50px;
-  animation: arrow-rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
   background-size: contain;
+  animation: arrow-rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
   @keyframes arrow-rotate-vert-center {
     0% {
       transform: rotateY(0);
@@ -640,15 +616,111 @@
     }
   }
 }
+@media screen and (max-width: 1810px) {
+  .sec-left {
+    width: 20%;
+  }
+  .sec-left-tit {
+    font-size: 36px;
+    padding: 10px 0;
+  }
+  .sec-left-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .sec-left-sub {
+    font-size: 18px;
+    letter-spacing: -0.4px;
+  }
+  .sec-left-txt {
+    font-size: 16px;
+  }
+  .sec-left-arrows-g, .verve-desc-scrollarrow-g {
+    padding-top: 18%;
+    &::after {
+      top: 28px;
+      left: 80px;
+    }
+  }
+  .sec-left-arrows-txt, .verve-desc-scrollarrow-txt {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1660px) {
+  .sec-left {
+    width: 18%;
+    padding: 10px;
+  }
+  .sec-left-icon {
+    margin: 0;
+  }
+  .sec-left-tit {
+    font-size: 32px;
+  }
+  .sec-left-txt {
+    font-size: 15px;
+  }
+  .sec-left-cont {
+    padding: 20px 0;
+  }
+  .sec-left-experience {
+    padding-top: 30px;
+  }
+  .sec-left-arrows-g {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    &::after {
+      display: none;
+    }
+  }
+  .sec-left-arrows {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 1610px) {
+  .sec-left {
+    width: 16%;
+  }
+  .sec-left-icon {
+    display: none;
+  }
+  .sec-left-arrows-g {
+    padding-top: 16%;
+    &::after {
+      top: 38px;
+      left: 118px;
+    }
+  }
+  .mendini-desc-scrollarrow-g {
+    padding-top: 24%;
+    &::after {
+      top: 64px;
+      left: 118px;
+    }
+  }
+} 
+
 // Section Comm : right contents
 .sec-right {
   position: relative;
   width: 73%;
   height: 100vh;
 }
-@media only screen and (max-width: 1600px) {
+@media screen and (max-width: 1810px) {
   .sec-right {
-    width: 83%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1660px) {
+  .sec-right {
+    width: 82%;
+  }
+}
+@media only screen and (max-width: 1610px) {
+  .sec-right {
+    width: 84%;
   }
 }
 
@@ -718,6 +790,7 @@
     }
   }
 }
+
 // Section 4 : right contents
 .verve-cont { 
   display: flex;
@@ -892,11 +965,11 @@
   font-weight: 600;
   padding-top: 80px;
 }
-.githubqr {
-  width: 100px;
-  height: 100px;
-  background: url(../../dist/images/hyebinpark_gitbhub.png) 50% 50% no-repeat;
-  background-size: contain;
-}
+// .githubqr {
+//   width: 100px;
+//   height: 100px;
+//   background: url(../../dist/images/hyebinpark_gitbhub.png) 50% 50% no-repeat;
+//   background-size: contain;
+// }
 
 
