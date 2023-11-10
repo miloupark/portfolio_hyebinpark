@@ -6,15 +6,12 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @import "variables", "mixin", "fonts", "reset";
 
-
-
 // Layout : Fullpage 
 .fullpage-container {
   position: relative;
   margin: 0 auto;
 }
 .section {
-  // position: relative;
   width: 100%;
   height: 100vh;
   .fp-tableCell {
@@ -37,7 +34,6 @@
 }
 .section-inner-intro {
   flex-direction: column;
-  
 }
 .header-nav_title {
   font-family: $mori;
@@ -68,11 +64,13 @@
 .intro-title-top {
   position: relative;
   display: flex;
-  span {
-    color: $w; 
-  }
+  color: $w; 
+}
+.intro-title-per {
+  margin-right: 32px;
 }
 .sunglass-img {
+  display: inline-block;
   width: 88px;
   height: 88px;
   animation: sunglass-rotate-vert-center 1.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
@@ -107,13 +105,64 @@
   display: flex;
   color: $w;
   margin-left: -200px;
+  letter-spacing: -8px;
   transform: translateY(-8px);
   span {
     color: $w; 
   }
 }
+// Intro Title / max-width: 1280px
+@media screen and (max-width: 1280px) {
+  .intro-title-top { 
+    flex-direction: column ;
+    align-items: center;
+  }
+  .intro-title-per {
+    margin-right: 0;
+  }
+  .sunglass-img {
+    width: 80px;
+    height: 80px;
+  }
+  .intro-title-btm {
+    margin-left: -224px;
+  }
+}
+// Intro Title / max-width: 768px
+@media screen and (max-width: 768px) {
+  .intro-title {
+    font-weight: 800;
+    font-size: 100px;
+  }
+  .intro-title-per {
+    margin-right: 0;
+  }
+  .sunglass-img {
+    width: 60px;
+    height: 60px;
+  }
+  .scale-star {
+    width: 56px;
+    height: 56px;
+  }
+  .intro-title-btm {
+    margin-left: -228px;
+  }
+}
+// Intro Title / max-width : 480px
+@media screen and (max-width: 480px) {
+  .intro-title {
+    font-weight: 700;
+    font-size: 80px;
+  }
+  .sunglass-img {
+    width: 48px;
+    height: 48px;
+  }
+}
 
-// Section 2 : profile
+// Section 2
+// Section 2 : profile / left descirption
 .section-profile {
   display: flex;
   width: 100%;
@@ -156,27 +205,27 @@
   align-items: center;
   gap: 16px;
   padding-bottom: 20px;
-  .profile-intro-smile {
-    width: 100px;
-    height: 100px;
-    background: url(../../dist/images/smile.svg) 50% 50% no-repeat;
-    animation: smile-rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
-    background-size: contain;
-    @keyframes smile-rotate-vert-center {
-      0% {
-        transform: rotateY(0);
-      }
-      100% {
-        transform: rotateY(360deg);
-      }
+}
+.profile-intro-smile {
+  width: 100px;
+  height: 100px;
+  background: url(../../dist/images/smile.svg) 50% 50% no-repeat;
+  animation: smile-rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  background-size: contain;
+  @keyframes smile-rotate-vert-center {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(360deg);
     }
   }
-  .profile-intro-txt {
-    font-family: $mori;
-    font-size: 56px;
-    font-weight: 800;
-    color: #111;
-  }
+}
+.profile-intro-txt {
+  font-family: $mori;
+  font-size: 56px;
+  font-weight: 800;
+  color: #111;
 }
 
 .profile-intro-contents {
@@ -190,18 +239,18 @@
   font-family: $nanum;
   color: #111;
   border-top: 1px solid #111;
-  .profile-intro-cont_tit {
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .profile-intro-cont_lst {
-    font-size: 19px;
-    font-weight: 500;
-    text-align: end;
-    padding-top: 8px;
-    li {
-      padding-top: 2px;
-    }
+}
+.profile-intro-cont_tit {
+  font-size: 30px;
+  font-weight: 600;
+}
+.profile-intro-cont_lst {
+  font-size: 19px;
+  font-weight: 500;
+  text-align: end;
+  padding-top: 8px;
+  li {
+    padding-top: 2px;
   }
 }
 .profile-intro-cont_lst-g {
@@ -298,8 +347,122 @@
 .contact-github-tooltip-cont {
   height: 40px;
 }
+// Section 2 : left / max-width: 1440px
+@media screen and (max-width: 1440px) {
+  .profile-intro {
+    &::after {
+      right: -27px;
+      width: 40px;
+      height: 135px;
+    }
+    &::before {
+      right: -27px;
+      width: 40px;
+      height: 135px;
+    }
+  }
+  .profile-intro-smile {
+    width: 90px;
+    height: 90px;
+  }
+  .profile-intro-txt {
+    font-size: 50px;
+  }
+  .profile-intro-contents {
+    padding: 10px;
+  }
+  .profile-intro-cont_tit {
+    font-size: 28px;
+  }
+  .profile-intro-cont_lst {
+    font-size: 18px;
+    li {
+      padding-top: 4px;
+    }
+  }
+  .profile-intro-contents-star {
+    top: -20px;
+    width: 40px;
+    height: 40px;
+  }
+  // Section 2 : left / max-width: 1280px
+  @media screen and (max-width: 1280px) {
+    .profile-intro-smile {
+      width: 70px;
+      height: 70px;
+    }
+    .profile-intro-txt {
+      font-size: 44px;
+    }
+    .profile-intro-cont_tit {
+      font-size: 26px;
+    }
+    .profile-intro-cont_lst {
+      font-size: 17px;
+      li {
+        padding-top: 4px;
+      }
+    }
+    .profile-intro-contents-star {
+      top: -20px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+// Section 2 : left / max-width: 1024px
+@media screen and (max-width: 1024px) {
+  .profile-intro {
+    width: 100%;
+    height: 100vh;
+    &::after, &::before {
+      display: none;
+    }
+  }
+  .profile-intro-contents {
+    padding: 16px 24px;
+  }
+  .intro-cont_lst-skills {
+    &:nth-child(2) {
+      padding-top: 16px;
+    }
+  }
+}
+// Section 2 : left / max-width: 624px
+@media screen and (max-width: 624px) {
+  .profile-intro-title {
+    height: 12%;
+  }
+  .profile-intro-txt {
+    font-size: 40px;
+  }
+  .profile-intro-contents {
+    flex-direction: column;
+    justify-content: center;
+    height: 22%;
+    padding: 24px;
+    gap: 0;
+  }
+  .profile-intro-cont_lst {
+    padding: 0;
+    font-size: 16px;
+  }
+  .profile-intro-cont_lst-g {
+    align-items: flex-end;
+  }
+}
+// Section 2 : left / max-width: 480px
+@media screen and (max-width: 480px) {
+  .profile-intro-cont_tit {
+    font-size: 24px;
+  }
+  .profile-intro-contents {
+    justify-content: space-between;
+    padding: 16px;
+  }
+}
 
-// Section 2 : right welcome text
+// Section 2 : right / welcome text
 .profile-welcome {
   width: 50%;
   height: 100vh;
@@ -316,6 +479,29 @@
   font-size: 72px;
   font-weight: 800;
   padding-top: 100px;
+}
+// Section 2 : right / max-width: 1440px
+@media screen and (max-width: 1440px) {
+  .profile-welcome-txt {
+    font-size: 68px;
+    font-weight: 800;
+  }
+}
+// Section 2 : right / max-width: 1280px
+@media screen and (max-width: 1280px) {
+  .profile-welcome-txt {
+    font-size: 56px;
+    font-weight: 800;
+    span {
+      padding-bottom: 8px;
+    }
+  }
+}
+// Section 2 : right / max-width: 1024px
+@media screen and (max-width: 1024px) {
+  .profile-welcome {
+    display: none;
+  }
 }
 
 // Section Comm : Section 3 ~ Section 5
